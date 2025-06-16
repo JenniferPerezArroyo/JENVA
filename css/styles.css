@@ -1,0 +1,97 @@
+/* Fondo general */
+/* Estilos generales del body: fondo claro, texto gris oscuro, y fuente profesional */
+.custom-navbar {
+    background-color:#ffffff!important;      /* Color de fondo general */
+    color: #ffffff;                      /* Color del texto */
+    font-family: 'Segoe UI', sans-serif;   /* Fuente moderna y legible */
+}
+
+/* Estilos para la barra de navegación (navbar) */
+.navbar-dark {
+    background-color:#1946b7 !important; /* Rosa fuerte personalizado para el fondo de la navbar */
+    
+}
+/*fuente y puntero de JenVA*/
+.navbar-brand{
+    font-size: 1.6rem; /* tamaño JenVA */
+    transition: all 0.3s ease;
+}
+.navbar-brand:hover {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+/*fuente y puntero de soporte, iniciar sesión y Registrarse*/
+.nav-link{
+    font-size: 1.2rem; /* tamaño JenVA */
+    transition: all 0.3s ease;
+}
+.nav-link:hover{
+    font-size: 1.7rem; /* tamaño JenVA */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Estilos para los botones principales */
+.btn-primary {
+    background-color: #4e80ff;   
+    border-color: #3a6ff7;       /* Borde igual al fondo */
+}
+
+.btn-primary:hover {
+    background-color: #1946b7;   /* Color más oscuro cuando pasas el cursor */
+    border-color: #1946b7;       /* Borde también más oscuro al hacer hover */
+}
+
+/* Estilos para las tarjetas de servicios */
+.card {
+    border: none;                             /* Quita el borde por defecto */
+    border-radius: 12px;                      /* Bordes redondeados */
+    overflow: hidden;                         /* Oculta desbordamientos (útil para imágenes dentro) */
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);     /* Sombra suave para dar profundidad */
+}
+
+/* Superposición de texto sobre las imágenes en las tarjetas */
+.card-img-overlay {
+    background: rgba(255, 255, 255, 0.6);      /* Fondo blanco semitransparente encima de la imagen */
+    color: #2C1F1F;                               /* Color del texto encima de la imagen */
+}
+
+/* Estilo del título dentro de las tarjetas */
+.card-title {
+    font-weight: bold;    /* Título en negrita */
+    color: #ffffff;
+}
+
+/* Estilo del texto dentro de las tarjetas */
+.card-text {
+    color:#ffffff; /* blanco */
+}
+
+/* Cabecera personalizada (reemplaza a bg-primary de Bootstrap) */
+.custom-header {
+    /*background-color:#3f83f9; /*header */
+    background: linear-gradient(to right, #1946b7, #8cabfb);
+    color: #E9DADA;
+}
+
+/* Estilo personalizado para el footer */
+.custom-footer {
+    background-color: #8cabfb; /* Fondo suave */
+    color: #E9DADA;            /* Texto en gris oscuro */
+    border-top: none;          /* Quita cualquier borde superior */
+}
+
+
+/* Estilo para las imágenes dentro de tarjetas */
+.card-img {
+    height: 250px;       /* Altura fija para todas las imágenes para que las tarjetas tengan el mismo tamaño */
+    object-fit: cover;   /* Recorta la imagen para llenar el espacio sin deformarse */
+}
+
+.card-img {
+    height: 250px;           /* Altura fija para todas las imágenes */
+    object-fit: cover;       /* Recorta la imagen para que encaje sin deformarse */
+    width: 100%;             /* Asegura que ocupe toda la tarjeta */
+}
+

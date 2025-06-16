@@ -1,0 +1,67 @@
+/* Tarjetas del panel de cliente */
+.container .card:not(.soporte-card){
+    border:2px solid transparent;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Fuerza que todas tengan misma altura si están dentro de .row */
+}
+
+/* Tarjetas del panel de cliente al pasar el puntero */
+.container .card:not(.soporte-card):hover {
+    transform: translateY(-10px);
+    border: 2px solid #1946b7 !important;
+    border-radius: 10px;
+}
+
+/* Título y texto de tarjeta */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333; 
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #333333;
+    font-size: 0.95rem;
+}
+
+/* Botones dentro de las tarjetas */
+.card .btn-primary {
+    background-color: #4e80ff;   
+    border-color: #3a6ff7;       
+}
+
+.card .btn-primary:hover {
+    background-color: #1946b7;   /* Color más oscuro cuando pasas el cursor */
+    border-color: #1946b7;       
+}
+
+
+/*boton cerrar sesión*/
+.btn-sesion {
+    background-color: #4e80ff; 
+    border: none;
+    color: #fff;
+}
+
+.btn-sesion:hover {
+    background-color: #81a3f9; /* Color al pasar el cursor */
+}
+
+
+/* Desactiva movimiento para la tarjeta de soporte */
+.card.soporte-card {
+    transform: none ;
+    transition: none ;
+    border: 2px solid #1946b7 ; /* borde azul siempre visible */
+    border-radius: 12px ;
+}
+
+/* Desactiva movimiento también al hacer hover por si acaso */
+.card.soporte-card:hover {
+    transform: none;
+    box-shadow: none;
+}

@@ -1,0 +1,79 @@
+/* Contenedor principal del dashboard admin */
+.admin-container {
+    background-color: #fefefe;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+/* Título */
+.admin-container h2 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Subtítulo o texto descriptivo de tarjetas*/
+.text-center p {
+    color: #2b2b2b;
+    font-size: 0.9rem;
+}
+
+/* Tarjetas del dashboard */
+.admin-container .card {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.admin-container .card:hover {
+    transform: translateY(-10px);
+    border: 2px solid #1946b7 !important; /* tono vino con opacidad */
+    border-radius: 10px; /* asegura que el borde sea redondeado igual */
+}
+
+/* Botones */
+.admin-container .btn-primary {
+    background-color: #4e80ff;   
+    border-color: #3a6ff7;       /* Borde igual al fondo */
+}
+
+.admin-container .btn-primary:hover {
+    background-color: #1946b7;   /* Color más oscuro cuando pasas el cursor */
+    border-color: #1946b7;       /* Borde también más oscuro al hacer hover */
+}
+
+.card-title {
+    color: #333 !important; /* Gris oscuro para buen contraste */
+}
+
+/*boton cerrar sesión*/
+.btn-sesion {
+    background-color: #4e80ff; /* Tu color deseado */
+    border: none;
+    color: #fff;
+}
+
+.btn-sesion:hover {
+    background-color: #81a3f9; /* Color al pasar el cursor */
+}
+
+/*paginas en construccion*/
+h3{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2rem;   /* opcional: separa un poco del navbar */
+  margin-bottom: 1rem;
+}
+
+img.card-img{
+  display: block;       /* para que margin auto funcione */
+  max-width: 50%;       /* ocupa hasta un 20% del ancho del contenedor */
+  height: auto;         /* mantiene proporción */
+  margin: 0 auto 2rem;  /* centra y separa de lo que venga debajo */
+  border-radius: 8px;   /* opcional: esquinas redondeadas */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
